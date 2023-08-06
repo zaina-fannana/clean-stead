@@ -1,0 +1,140 @@
+.call-us {
+  order: 4;
+}
+.who-us {
+  order: 3;
+}
+.services11 {
+  order: 2;
+}
+.home {
+  order: 1;
+}
+.navbar {
+  background: #fff;
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Avenir Arabic";
+}
+.navbar .collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar .mr-auto {
+  display: flex;
+  align-items: center;
+}
+.navbar .mr-auto .logIn {
+  margin-left: 8px;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #00adee;
+  border: 1px solid #00adee;
+  width: 80px;
+  height: 35px;
+}
+.navbar .mr-auto .btn {
+  margin-left: 0;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: #00adee;
+  border: 1px solid #00adee;
+}
+.navbar .nav-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  color: #000;
+}
+.navbar .logo {
+  margin-left: auto;
+}
+.navbar .logo span {
+  color: #00adee;
+}
+.navbar img {
+  max-width: 100%;
+  height: auto;
+}
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar .collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .mr-auto {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .navbar .mr-auto .logIn,
+  .navbar .mr-auto .btn {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .navbar .nav-contents {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .navbar .logo {
+    margin-left: 0;
+  }
+
+  .navbar .nav-contents h6 {
+    margin: 10px 0;
+  }
+}
+
+p.sheet {
+  margin-right: 52px;
+  margin-top: -18px;
+}
+
+.sheet {
+  border-radius: 8px;
+  width: 212px;
+  height: 55px;
+  margin-top: 20px;
+}
+img.overview {
+  margin-top: 19px;
+  margin-right: 22px;
+}
+button.logout {
+  margin-right: 10px;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #303c38;
+  border: 0px;
+  background: #fff;
+}
+
+.Rectangle4153 {
+  /* Rectangle 4153 */
+  background: #ffffff;
+}

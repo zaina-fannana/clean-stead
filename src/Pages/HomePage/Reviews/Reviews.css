@@ -1,0 +1,111 @@
+.reviews {
+  margin-top: 50px;
+  font-family: 'Avenir Arabic';
+
+}
+
+.column1 {
+  display: flex;
+}
+
+.group1 {
+  text-align: center;
+  margin-right: 140px;
+  margin-top: 40px;
+  display: inline;
+}
+
+.group112 {
+  margin-right: 250px;
+  margin-top: -20px;
+}
+
+.Rectangles1 {
+  width: 270px;
+  left: 34.25px;
+  top: 30.39px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 173, 238, 0.1);
+  border-radius: 25px;
+  margin-top: -40px;
+  height: 160px;
+}
+
+.group111 .comma1 {
+  margin-left: 10px;
+}
+
+p.text3 {
+  /* ندرك صعوبة القيام بتنظيف السجاد من قبل النساء */
+  width: 260.09px;
+  height: 50px;
+  left: 970.21px;
+  font-weight: 285;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+
+h5.text4 {
+  /* محمد أحمد */
+  text-align: center;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #2f3239;
+}
+
+.group111 {
+  margin-left: 600px;
+}
+
+.group111 .img {
+  border-radius: 0%;
+}
+
+.group190,
+.group191,
+.group192 {
+  /* width: 370px;
+  height: 288.3px;*/
+  text-align: center;
+  width: 370px;
+  height: 288.3px;
+  margin-left: 190px;
+}
+
+.Ellipse1,
+.Ellipse2,
+.Ellipse3 {
+  margin-left: 0px;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  .group190,
+  .group191,
+  .group192 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  /*font*/
+  .reviews h6,
+  .reviews p {
+    text-align: center;
+  }
+
+  .group190 .Rectangles1,
+  .group191 .Rectangles1,
+  .group192 .Rectangles1 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .group111 {
+    margin-left: 0;
+  }
+}

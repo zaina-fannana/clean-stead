@@ -1,0 +1,67 @@
+* {
+  font-family: "Avenir Arabic";
+}
+.creatAccount {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  color: #7d7e82;
+  margin-right: 70px;
+}
+.login {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  color: #7d7e82;
+}
+.active-title {
+  color: #00adee;
+}
+img.user {
+  height: 25px;
+  margin-right: -225px;
+  margin-top: 9px;
+}
+.link-text {
+  cursor: pointer;
+  color: #00adee;
+}
+button.btn-close {
+  margin-top: 15px;
+}
+.blue-line {
+  width: 100px;
+  height: 5px;
+  left: 541.91px;
+  margin-top: 15px;
+  background: #00adee;
+  border-radius: 10px 10px 0px 0px;
+}
+
+span.required {
+  margin-left: 290px;
+}
+
+
+@media (max-width: 768px) {
+  .creatAccount,
+  .login,
+  .link-text,
+  .btn-close,
+  .blue-line,
+  span.required {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .user {
+    margin-right: -120px;
+  }
+
+  /* Additional styles for smaller screens */
+  .blue-line {
+    width: 80px;
+  }
+}

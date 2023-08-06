@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/zaina-fannana/clean.stead.git/static/css/main.f9a6883f.css",
+    "main.js": "/zaina-fannana/clean.stead.git/static/js/main.aefb4f4f.js",
+    "static/js/787.a9940bb9.chunk.js": "/zaina-fannana/clean.stead.git/static/js/787.a9940bb9.chunk.js",
+    "static/media/Mask group.png": "/zaina-fannana/clean.stead.git/static/media/Mask group.e8e649965e69cb1ef3d4.png",
+    "index.html": "/zaina-fannana/clean.stead.git/index.html",
+    "main.f9a6883f.css.map": "/zaina-fannana/clean.stead.git/static/css/main.f9a6883f.css.map",
+    "main.aefb4f4f.js.map": "/zaina-fannana/clean.stead.git/static/js/main.aefb4f4f.js.map",
+    "787.a9940bb9.chunk.js.map": "/zaina-fannana/clean.stead.git/static/js/787.a9940bb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9a6883f.css",
+    "static/js/main.aefb4f4f.js"
+  ]
+}

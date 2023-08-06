@@ -1,0 +1,283 @@
+div.Rectangle415 {
+  margin-right: 311px;
+  margin-top: -413px;
+  width: 880px;
+  height: 750px;
+  background-color: ghostwhite;
+}
+h5.overview {
+  /* نظرة عامة */
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 85px;
+  text-align: right;
+  color: #000000;
+  width: 111px;
+  margin-right: 38px;
+}
+img.Rectangle2 {
+  margin-right: 50px;
+}
+
+.Group263 {
+  margin-right: 565px;
+  margin-top: -73px;
+}
+.notification {
+  height: 65px;
+}
+h5.profile {
+  margin-top: -34px;
+
+  /* name */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 162px;
+  letter-spacing: 0.2px;
+  color: #252733;
+}
+img.header {
+  margin-right: 15px;
+}
+.Rectangle4167 {
+  width: 800px;
+  height: 108px;
+  margin-top: 39px;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-right: 38px;
+}
+.totalBooking {
+  width: 200px;
+}
+.hanging {
+  width: 200px;
+  margin-right: 230px;
+  margin-top: -94px;
+}
+.Confirmed {
+  width: 200px;
+  margin-right: 418px;
+  margin-top: -95px;
+}
+.rejected {
+  width: 200px;
+  margin-top: -96px;
+  margin-right: 618px;
+}
+h3.totalNum {
+  /* 55 */
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #323b3d;
+  margin-top: -95px;
+  width: 80px;
+}
+
+h5.totalBooking0 {
+  /* اجمالي الحجوزات */
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  width: 318px;
+  margin-top: -10px;
+  color: #808080;
+}
+
+h3.hangingNum {
+  /* 41 */
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #323b3d;
+  width: 80px;
+  margin-top: -95px;
+}
+h5.hanging0 {
+  /*معلق*/
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  width: 253px;
+  margin-top: -10px;
+  color: #808080;
+}
+h3.ConfirmedNum {
+  /*67*/
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #323b3d;
+  width: 80px;
+  margin-top: -95px;
+}
+h5.Confirmed0 {
+  /*تم تأكيده*/
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  width: 253px;
+  margin-top: -10px;
+  color: #808080;
+  margin-right: 13px;
+}
+
+h3.rejectedNum {
+  /*24*/
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #323b3d;
+  width: 80px;
+  margin-top: -95px;
+}
+h5.rejected0 {
+  /*تم رفضه*/
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  width: 253px;
+  margin-top: -10px;
+  color: #808080;
+  margin-right: 13px;
+}
+
+.sheet2 {
+  /* sheet2 */
+  background: #ffffff;
+  border-radius: 12px;
+  margin-right: 38px;
+  margin-top: 40px;
+  width: 550px;
+  height: 444px;
+}
+.Reservations0 {
+  width: 215px;
+}
+h6.Reservations {
+  /* حجوزات اليوم */
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 70px;
+  text-align: right;
+  letter-spacing: 0.4px;
+  color: #000000;
+  margin-right: 30px;
+  width: 107px;
+}
+
+h6.TimeAndDate {
+  /* as of 25 May 2022, 09:41 PM */
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: -22px;
+  text-align: right;
+  letter-spacing: 0.1px;
+  margin-right: 30px;
+  color: #808080;
+  width: 170px;
+}
+.today {
+  /* sheet */
+  background: #ebf8fe;
+  border-radius: 10px;
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  margin-right: 300px;
+  margin-top: -13px;
+}
+
+h6.today0 {
+  /* اليوم */
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+  color: #00adee;
+  margin-top: -44px;
+  margin-right: 5px;
+}
+.week {
+  margin-right: 400px;
+  margin-top: -39px;
+}
+h6.week0 {
+  /* الاسبوع */
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: right;
+  letter-spacing: 0.4px;
+  color: #808080;
+}
+.month {
+  margin-right: 475px;
+  margin-top: -35px;
+}
+h6.month0 {
+  /* الشهر */
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.4px;
+  margin-top: 14px;
+  color: #808080;
+}
+img.fullGraph {
+  width: 505px;
+  margin-right: 23px;
+  margin-top: 55px;
+}
+
+.activities {
+  margin-top: -412px;
+  margin-right: 580px;
+  width: 220px;
+  height: 446px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+h6.activities0 {
+  /* أخر النشاطات */
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 70px;
+  text-align: right;
+  color: #000000;
+  margin-right: 26px;
+}
+img.Mask0 {
+  margin-right: 20px;
+}
+img.email0 {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.Reserve {
+  margin-top: -15px;
+}
+.send {
+  margin-top: -11px;
+}
+p.Reserve {
+  margin-right: 65px;
+  margin-top: -35px;
+}
+
+p.send {
+  margin-right: 65px;
+  margin-top: -35px;
+}

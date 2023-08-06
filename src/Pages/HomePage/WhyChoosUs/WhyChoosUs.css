@@ -1,0 +1,75 @@
+.whychoose {
+  margin-top: 50px;
+  font-family: "Avenir Arabic";
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #303c38;
+}
+.title img {
+  margin-right: 10px;
+}
+
+.title img {
+  margin-left: 10px;
+}
+
+.col-12.col-md-6 {
+  display: flex;
+  align-items: center;
+}
+
+.img.rely {
+  margin-right: 10px;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  /* Fonts */
+  .whychoose .title h2 {
+    font-size: 24px;
+  }
+
+  /* Images */
+  .whychoose .title img {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .whychoose .col-12.col-md-6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whychoose .img.rely {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Fonts */
+  .whychoose .title h2 {
+    font-size: 20px;
+  }
+
+  /* Images */
+  .whychoose .title img {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+  .whychoose .col-12.col-md-6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whychoose .img.rely {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,102 @@
+* {
+  margin-bottom: 0%;
+  font-family: 'Avenir Arabic',
+
+}
+.img {
+  display: flex;
+  align-items: center;
+}
+
+.fas1 {
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background: #e5f7fd;
+  border: 1px;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+  color: black;
+}
+
+.containar {
+  margin-bottom: 0px;
+}
+
+.div .logo1 span {
+  color: #00adee;
+}
+h5 {
+  /* color: #000;*/
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  float: inline-start;
+}
+div .servise {
+  color: #7d7e82;
+  text-align: start;
+}
+p .text {
+  text-align: end;
+}
+
+p {
+  color: #7d7e82;
+}
+a {
+  color: #7d7e82;
+}
+.servise .p {
+  color: #7d7e82;
+  text-align: end;
+}
+.list {
+  color: #7d7e82;
+}
+
+.fas {
+  font-weight: 25;
+  text-align: left;
+}
+
+.divider {
+  border: none;
+  border-top: 6px solid #fff;
+  margin: 20px 9;
+  height: 5px;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+h5.text-uppercase.mb-4.font-weight-.text-end {
+  margin-right: -20px;
+}
+h5.text-uppercase.mb-4.font-weight-bold.text-end {
+  margin-right: -20px;
+}
+h5.text-uppercase.mb-4.font-weidht-bold.text-end {
+  margin-right: -20px;
+}
+@media (max-width: 575px) {
+  footer {
+    padding: 20px;
+    margin-left: -150px;
+  }
+}
