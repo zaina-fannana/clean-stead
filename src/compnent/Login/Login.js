@@ -4,13 +4,13 @@ import * as Yup from "yup";
 import "./Login.css";
 import Modal from "react-bootstrap/Modal";
 import axios from "axios";
-import { useAuth } from "../../AuthContext/AuthContext";
+import { useAuthContext } from "../../AuthContext/AuthContext";
 import { setAccessToken } from "../../axiosConfig";
-
+import { registerService } from "../../services"
 const Login = ({ isShow, onClose }) => {
   const [isLogin, setIsLogin] = useState();
   const [isClose, setIsClose] = useState();
-  const { setIsAuthnticated } = useAuth();
+  const { setIsAuthnticated } = useAuthContext();
   const [loginAttemptFailed, setLoginAttemptFailed] = useState("");
   const loginInitialValues = {
     email: "abullah@gmailASD.comm",
@@ -65,7 +65,7 @@ const Login = ({ isShow, onClose }) => {
     registerData.append("password", values.password);
     try {
       debugger;
-      const response = await axios.post("/register", registerData);
+      const response = registerService(registerData);
       const { data } = response;
       console.log({ data });
       if (response.data.status) {
@@ -305,7 +305,7 @@ const Login = ({ isShow, onClose }) => {
             ) : null}
 
             <div className="password-error-message">
-              {loginAttemptFailed && <span className="required">{}</span>}
+              {loginAttemptFailed && <span className="required">{ }</span>}
             </div>
 
             <button onClick={() => formik.handleSubmit()} className="create">

@@ -2,10 +2,6 @@ import React, { createContext, useState, useContext, useEffect } from "react";
 
 const AuthContext = createContext();
 
-export function useAuth() {
-  return useContext(AuthContext);
-}
-
 export function AuthProvider({ children }) {
   const [isAuthnticated, setIsAuthnticated] = useState(false);
   useEffect(() => {
@@ -19,4 +15,8 @@ export function AuthProvider({ children }) {
       {children}
     </AuthContext.Provider>
   );
+}
+
+export function useAuthContext() {
+  return useContext(AuthContext);
 }

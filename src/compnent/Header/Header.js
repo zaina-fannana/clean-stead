@@ -4,7 +4,7 @@ import logo1 from "../../assets/images/logo1.png";
 import "./Header.css";
 import SignupForm from "../SignupForm/SignupForm";
 import Login from "../Login/Login";
-import { useAuth } from "../../AuthContext/AuthContext";
+import { useAuthContext } from "../../AuthContext/AuthContext";
 import BookNow from "../BookNow/BookNow";
 import { Link } from "react-router-dom";
 import overview from "../../assets/images/overview.png";
@@ -21,7 +21,7 @@ function Header() {
   const [isBookNowVisible, setIsBookNowVisible] = useState(false);
   const [isSlideVisible, setIsSlideVisible] = useState(false);
   const [isLoginComplete, setIsLoginComplete] = useState(false);
-  const { isAuthnticated } = useAuth();
+  const { isAuthnticated } = useAuthContext();
   const [showOverviewPage, setShowOverviewPage] = useState(false);
   const toggleSlide = (index) => {
     if (index === selectedDivIndex) {
