@@ -24,44 +24,57 @@ img.user {
   margin-right: -225px;
   margin-top: 9px;
 }
-.link-text {
-  cursor: pointer;
-  color: #00adee;
-}
 button.btn-close {
   margin-top: 15px;
 }
 .blue-line {
-  width: 100px;
+  width: 80px;
   height: 5px;
   left: 541.91px;
   margin-top: 15px;
   background: #00adee;
   border-radius: 10px 10px 0px 0px;
 }
-
 span.required {
   margin-left: 290px;
 }
-
-
-@media (max-width: 768px) {
-  .creatAccount,
-  .login,
-  .link-text,
-  .btn-close,
-  .blue-line,
-  span.required {
-    margin-right: 0;
+.user {
+  margin-right: -120px;
+}
+@media (max-width: 600px) {
+  .creatAccount {
+    margin-right: 60px;
     margin-left: 20px;
   }
-
-  .user {
-    margin-right: -120px;
+  button.btn-close {
+    margin-top: 15px;
+    margin-right: 13px;
   }
-
-  /* Additional styles for smaller screens */
   .blue-line {
-    width: 80px;
+    margin-right: 0px;
+    margin-left: 50px;
+  }
+  .login {
+    margin-left: 41px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    color: #7d7e82;
+    margin-right: 75px;
+  }
+  #line-12 {
+    height: 0px;
+    left: 520px px;
+    top: 343.96px;
+    border: 2px solid #f2f2f2;
+    margin-top: -10px;
+  }
+  .input-with-icon {
+    border: 2px solid #f2f2f2;
+    border-radius: 12px;
+    padding-inline: 21px;
+    padding-block: 9px;
+    margin-top: 10px;
+    width: 390px;
   }
 }

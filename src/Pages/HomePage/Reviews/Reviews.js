@@ -1,12 +1,6 @@
 import React from "react";
 import "./Reviews.css";
-import lines1 from "../../../assets/images/lines1.png";
-import lines2 from "../../../assets/images/lines2.png";
-import comma1 from "../../../assets/images/comma1.png";
-import Ellipse1 from "../../../assets/images/Ellipse1.png";
-import comma2 from "../../../assets/images/comma2.png";
-import Ellipse2 from "../../../assets/images/Ellipse2.png";
-import Ellipse3 from "../../../assets/images/Ellipse3.png";
+import { comma1 ,Ellipse1 ,comma2 ,Ellipse2 ,Ellipse3 ,lines1 ,lines2} from "../../../assets";
 
 const Reviews = () => {
   return (

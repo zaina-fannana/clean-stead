@@ -71,7 +71,7 @@ body {
   align-content: center;
 }
 
-@media (min-width: 762px) {
+@media (min-width: 600px) {
   .wrap-header .col-lg-4 {
     flex: 0 0 50%;
     max-width: 400px;
@@ -87,6 +87,13 @@ body {
   .wrap-header .text-wrap {
     text-align: right;
   }
+  .wrap-header h4 {
+    color: #000000;
+    font-size: 30px;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 4px;
+}
 
   .wrap-header .image-wrap {
     text-align: left;

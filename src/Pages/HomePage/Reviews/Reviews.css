@@ -84,7 +84,7 @@ h5.text4 {
 
 /* Media queries for responsive design */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .group190,
   .group191,
   .group192 {

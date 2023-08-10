@@ -11,6 +11,9 @@
   justify-content: center;
 }
 
+.cleanHome {
+  margin-right: 65px;
+}
 .title img {
   margin-right: 10px;
 }
@@ -142,7 +145,7 @@ div.lines {
   .services h3,
   .services h6,
   .services p {
-    text-align: center;
+    /* text-align: center; */
   }
 
   /* Images */
@@ -181,7 +184,7 @@ div.lines {
   .services h3,
   .services h6,
   .services p {
-    text-align: center;
+    /* text-align: center; */
   }
 
   /* Images */

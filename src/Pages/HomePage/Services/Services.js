@@ -1,15 +1,6 @@
 import React from "react";
 import "./Services.css";
-import image1 from "../../../assets/images/image1.png";
-import Vector from "../../../assets/images/Vector.png";
-import image2 from "../../../assets/images/image2.png";
-import image3 from "../../../assets/images/image3.png";
-import image4 from "../../../assets/images/image4.png";
-import image5 from "../../../assets/images/image5.png";
-import image6 from "../../../assets/images/image6.png";
-import lines1 from "../../../assets/images/lines1.png";
-import lines2 from "../../../assets/images/lines2.png";
-import Line from "../../../assets/images/Line.png";
+import { image1 ,Vector ,image2 ,image3 ,image4 ,image5 , image6 ,lines1 ,lines2 ,Line} from "../../../assets";
 
 const Servise = () => {
   return (
@@ -30,7 +21,7 @@ const Servise = () => {
             </div>
             <div className="Rectangle">
               <div className="cleanHome">
-                <h3>تنظيف المنازل</h3>
+                <h3 className="Clean">تنظيف المنازل</h3>
               </div>
               <img className="line" src={Line} alt=""></img>
               <div className="class1">
@@ -57,7 +48,7 @@ const Servise = () => {
             </div>
             <div className="Rectangle">
               <div className="cleanHome">
-                <h3>تنظيف التجاري</h3>
+                <h3 className="Clean">تنظيف التجاري</h3>
               </div>
               <img className="line" src={Line} alt=""></img>
               <div className="class1">
@@ -82,7 +73,7 @@ const Servise = () => {
             </div>
             <div className="Rectangle">
               <div className="cleanHome">
-                <h3>تنظيف السجاد</h3>
+                <h3 className="Clean">تنظيف السجاد</h3>
               </div>
               <img className="line" src={Line} alt=""></img>
               <div className="class1">
@@ -110,7 +101,7 @@ const Servise = () => {
             </div>
             <div className="Rectangle">
               <div className="cleanHome">
-                <h3>تنظيف النوافذ</h3>
+                <h3 className="Clean">تنظيف النوافذ</h3>
               </div>
               <img className="line" src={Line} alt=""></img>
               <div className="class1">
@@ -138,7 +129,7 @@ const Servise = () => {
 
             <div className="Rectangle">
               <div className="cleanHome">
-                <h3>تنظيف السيارات</h3>
+                <h3 className="Clean">تنظيف السيارات</h3>
               </div>
 
               <img className="line" src={Line} alt=""></img>
@@ -166,7 +157,7 @@ const Servise = () => {
             </div>
             <div className="Rectangle">
               <div className="cleanHome">
-                <h3>تنظيف بعد البناء</h3>
+                <h3 className="Clean">تنظيف بعد البناء</h3>
               </div>
 
               <img className="line" src={Line} alt=""></img>

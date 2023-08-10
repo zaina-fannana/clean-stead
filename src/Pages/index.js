@@ -1,3 +1,12 @@
 export { default as AboutUsPage } from "./AboutUsPage/AboutUsPage";
 export { default as HomePage } from "./HomePage/HomePage";
 export { default as SliderPage } from "./HomePage/SliderPage/SliderPage";
+export { default as Reviews } from "./HomePage/Reviews/Reviews";
+export { default as Services } from "./HomePage/Services/Services";
+export { default as WhyChoosUs } from "./HomePage/WhyChoosUs/WhyChoosUs";
+export {default as BookNowPage} from "./BookNowPage/BookNowPage";
+export { default as BookNow } from "./BookNowPage/BookNow/BookNow";
+export { default as EnterInfo } from "./BookNowPage/EnterInfo/EnterInfo";
+export { default as SelectDate } from "./BookNowPage/SelectDate/SelectDate";
+export { default as SelectService } from "./BookNowPage/SelectService/SelectService";
+export { default as Service } from "./BookNowPage/Service/Service";

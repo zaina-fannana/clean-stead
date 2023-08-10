@@ -1,4 +1,4 @@
-div.Rectangle416 {
+div.RectangleReservations {
   margin-right: 311px;
   margin-top: -413px;
   width: 880px;
@@ -15,7 +15,7 @@ h5.Reservations {
   width: 111px;
   margin-right: 38px;
 }
-.Rectangle4168 {
+.searchRectangle {
   width: 800px;
   height: 75px;
   margin-top: 39px;
@@ -25,7 +25,7 @@ h5.Reservations {
 }
 input.form-control.form-control-sm.ml-3.w-75 {
   /* 1565 او محمد الهبيل .. */
-  margin-top: -28px;
+  margin-top: -34px;
   margin-right: 30px;
   font-weight: 300;
   font-size: 14px;

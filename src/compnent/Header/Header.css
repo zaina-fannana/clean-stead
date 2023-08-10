@@ -21,16 +21,6 @@
   padding: 20px;
   font-family: "Avenir Arabic";
 }
-.navbar .collapse {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.navbar .mr-auto {
-  display: flex;
-  align-items: center;
-}
 .navbar .mr-auto .logIn {
   margin-left: 8px;
   margin-right: auto;
@@ -46,7 +36,7 @@
   margin-right: auto;
   border-radius: 20px;
   background-color: #00adee;
-  border: 1px solid #00adee;
+  border: 2px solid #00adee;
 }
 .navbar .nav-contents {
   display: flex;
@@ -65,52 +55,10 @@
   max-width: 100%;
   height: auto;
 }
-/* Media queries for responsive design */
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .navbar .collapse {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar .mr-auto {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .navbar .mr-auto .logIn,
-  .navbar .mr-auto .btn {
-    margin-top: 10px;
-    margin-right: 0;
-  }
-
-  .navbar .nav-contents {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: flex-start;
-  }
-
-  .navbar .logo {
-    margin-left: 0;
-  }
-
-  .navbar .nav-contents h6 {
-    margin: 10px 0;
-  }
-}
-
 p.sheet {
   margin-right: 52px;
   margin-top: -18px;
 }
-
 .sheet {
   border-radius: 8px;
   width: 212px;
@@ -133,8 +81,34 @@ button.logout {
   border: 0px;
   background: #fff;
 }
-
-.Rectangle4153 {
-  /* Rectangle 4153 */
+.dachbord {
   background: #ffffff;
+}
+img.out {
+  margin-right: 22px;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .navbar .nav-contents {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+  .navbar .logo {
+    margin-left: 0px;
+  }
+  .navbar .nav-contents h6 {
+    margin: 10px 0;
+  }
+  .navbar .mr-auto .logIn,
+  .navbar .mr-auto .btn {
+    margin-top: 10px;
+    margin-right: 0;
+    width: 105px;
+  }
 }

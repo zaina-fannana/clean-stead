@@ -1,10 +1,9 @@
 import React, { useState, Component } from "react";
-import line7 from "../../assets/images/Line7.png";
-import Date from "../../assets/images/Date.png";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Form from "react-bootstrap/Form";
 import "./SelectDate.css";
+import { line7 ,Date} from "../../../assets";
 
 const SelectDate = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -16,13 +15,13 @@ const SelectDate = () => {
   };
 
   return (
-    <div className="slide">
-      <div className="choose">
+    <div className="DateAndTimeslide">
+      <div className="ChooseDate">
         <div className="choose0">
           <img className="line7" src={line7} alt="" style={{
               marginTop: 15,
             }}/>
-          <h5 className="choose">اختر موعد الحجز</h5>
+          <h5 className="chooseTheDate">اختر موعد الحجز</h5>
           <div
             className="loop"
             style={{ margin: "20px 0" }}
@@ -82,7 +81,7 @@ const SelectDate = () => {
 
           <div className="date">
             <h4 className="date">التاريخ والوقت</h4>
-            <div className="Rectangle13">
+            <div className="DateAndTimeRectangle">
               <DatePicker
                 selected={selectedDate}
                 onChange={handleDateSelect}

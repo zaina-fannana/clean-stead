@@ -1,8 +1,7 @@
 import React from "react";
-import line7 from "../../assets/images/Line7.png";
 import Service from "../Service/Service";
-import Vector2 from "../../assets/images/Vector2.png";
 import "./SelectService.css";
+import { line7, Vector2 } from "../../../assets";
 
 const BookNowList = [
   {

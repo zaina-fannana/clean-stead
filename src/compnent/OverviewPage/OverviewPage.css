@@ -1,4 +1,4 @@
-div.Rectangle415 {
+div.RectangleOverview {
   margin-right: 311px;
   margin-top: -413px;
   width: 880px;
@@ -18,8 +18,7 @@ h5.overview {
 img.Rectangle2 {
   margin-right: 50px;
 }
-
-.Group263 {
+.notices {
   margin-right: 565px;
   margin-top: -73px;
 }
@@ -28,8 +27,6 @@ img.Rectangle2 {
 }
 h5.profile {
   margin-top: -34px;
-
-  /* name */
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -40,7 +37,7 @@ h5.profile {
 img.header {
   margin-right: 15px;
 }
-.Rectangle4167 {
+.cases {
   width: 800px;
   height: 108px;
   margin-top: 39px;
@@ -76,7 +73,6 @@ h3.totalNum {
   margin-top: -95px;
   width: 80px;
 }
-
 h5.totalBooking0 {
   /* اجمالي الحجوزات */
   font-weight: 300;
@@ -87,7 +83,6 @@ h5.totalBooking0 {
   margin-top: -10px;
   color: #808080;
 }
-
 h3.hangingNum {
   /* 41 */
   font-weight: 900;
@@ -129,7 +124,6 @@ h5.Confirmed0 {
   color: #808080;
   margin-right: 13px;
 }
-
 h3.rejectedNum {
   /*24*/
   font-weight: 900;
@@ -151,9 +145,7 @@ h5.rejected0 {
   color: #808080;
   margin-right: 13px;
 }
-
 .sheet2 {
-  /* sheet2 */
   background: #ffffff;
   border-radius: 12px;
   margin-right: 38px;
@@ -175,7 +167,6 @@ h6.Reservations {
   margin-right: 30px;
   width: 107px;
 }
-
 h6.TimeAndDate {
   /* as of 25 May 2022, 09:41 PM */
   font-weight: 500;
@@ -188,7 +179,6 @@ h6.TimeAndDate {
   width: 170px;
 }
 .today {
-  /* sheet */
   background: #ebf8fe;
   border-radius: 10px;
   width: 70px;
@@ -197,9 +187,7 @@ h6.TimeAndDate {
   margin-right: 300px;
   margin-top: -13px;
 }
-
 h6.today0 {
-  /* اليوم */
   font-weight: 300;
   font-size: 14px;
   line-height: 45px;
@@ -213,11 +201,9 @@ h6.today0 {
   margin-top: -39px;
 }
 h6.week0 {
-  /* الاسبوع */
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
-  /* identical to box height */
   text-align: right;
   letter-spacing: 0.4px;
   color: #808080;
@@ -227,7 +213,6 @@ h6.week0 {
   margin-top: -35px;
 }
 h6.month0 {
-  /* الشهر */
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -241,7 +226,6 @@ img.fullGraph {
   margin-right: 23px;
   margin-top: 55px;
 }
-
 .activities {
   margin-top: -412px;
   margin-right: 580px;
@@ -251,7 +235,6 @@ img.fullGraph {
   border-radius: 12px;
 }
 h6.activities0 {
-  /* أخر النشاطات */
   font-weight: 800;
   font-size: 18px;
   line-height: 70px;
@@ -276,8 +259,38 @@ p.Reserve {
   margin-right: 65px;
   margin-top: -35px;
 }
-
 p.send {
   margin-right: 65px;
   margin-top: -35px;
+}
+@media (max-width: 600px) {
+  div.RectangleOverview {
+    margin-right: -19px;
+    margin-top: 40px;
+    width: 465px;
+    height: 750px;
+    background-color: ghostwhite;
+  }
+  .sheet {
+    border-radius: 8px;
+    width: 212px;
+    height: 55px;
+    margin-top: 20px;
+    margin-right: 119px;
+  }
+  button.logout {
+    margin-right: 10px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: #303c38;
+    border: 0px;
+    background: #fff;
+  }
+  img.out {
+    margin-right: 137px;
+  }
 }

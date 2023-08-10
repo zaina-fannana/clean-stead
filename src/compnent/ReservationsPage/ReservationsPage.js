@@ -1,21 +1,16 @@
 import React from "react";
 import "./ReservationsPage.css";
-import header from "../../assets/images/header.png";
 import { MDBCol, MDBIcon } from "mdbreact";
-import acceptable from "../../assets/images/acceptable.png";
-import unacceptable from "../../assets/images/unacceptable.png";
-import hanging0 from "../../assets/images/hanging0.png";
-import TrueOrFalse from "../../assets/images/TrueOrFalse.png";
-import notfiacation1 from "../../assets/images/notfiacation1.jpg";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
 import Pagination from "react-bootstrap/Pagination";
+import { header ,acceptable ,unacceptable ,hanging0 ,TrueOrFalse ,notfiacation1} from "../../assets";
 
 const ReservationsPage = () => {
   return (
-    <div className="Rectangle416">
+    <div className="RectangleReservations">
       <h5 className="Reservations">الحجوزات</h5>
-      <div className="Group263">
+      <div className="notices">
         <div className="notification">
           <img className="Rectangle2" src={notfiacation1} alt=""></img>
           <img className="header" src={header} alt=""></img>
@@ -23,7 +18,7 @@ const ReservationsPage = () => {
         </div>
       </div>
 
-      <div className="Rectangle4168">
+      <div className="searchRectangle">
         <MDBCol md="6">
           <form className="form-inline mt-4 .mb-4">
             <MDBIcon icon="search" />
@@ -36,7 +31,7 @@ const ReservationsPage = () => {
           </form>
         </MDBCol>
 
-        <div className="Rectangle4169">
+        <div className="ReservationStatuses">
           <div className="all">
             <h6 className="all0">الكل</h6>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import line7 from "../../assets/images/Line7.png";
+import { line7 } from "../../../assets";
 import Form from "react-bootstrap/Form";
 import "./EnterInfo.css";
 
@@ -10,9 +10,9 @@ const EnterInfo = () => {
   const [addressDetails, setAddressDetails] = useState("");
 
   return (
-    <div className="slide">
+    <div className="SlideEnterinformation">
       <div className="choose">
-        <div className="choose0">
+        <div className="information">
           <img
             className="line7"
             style={{
@@ -21,25 +21,13 @@ const EnterInfo = () => {
             src={line7}
             alt=""
           ></img>
-          <h5 className="choose1">ادخل معلوماتك</h5>
-          <h6 className="login.">تسجيل الدخول</h6>
+          <h5 className="EnterYourInformation">ادخل معلوماتك</h5>
+          <h6 className="loginInformation">تسجيل الدخول</h6>
           <div className="information">
             <Form>
               <Form.Group className="mb-3">
                 <Form.Label>الاسم</Form.Label>
-                <Form.Control
-                  type="name"
-                  placeholder="الاسم"
-                  style={{
-                    fontWeight: 300,
-                    fontSize: 16,
-                    lineHeight: 25,
-                    width: 252,
-                    height: 51,
-                    marginTop: 90,
-                    marginRight: -38,
-                  }}
-                />
+                <Form.Control type="name" placeholder="الاسم" />
               </Form.Group>
               <Form.Group className="mb-4">
                 <Form.Label>رقم الجوال</Form.Label>
@@ -63,15 +51,6 @@ const EnterInfo = () => {
                   className="address"
                   type="address"
                   placeholder="العنوان"
-                  style={{
-                    fontWeight: 300,
-                    fontSize: 16,
-                    lineHeight: 25,
-                    width: 252,
-                    height: 51,
-                    marginRight: -46,
-                    marginTop: 44,
-                  }}
                 />
               </Form.Group>
               <Form.Group className="mb-4">

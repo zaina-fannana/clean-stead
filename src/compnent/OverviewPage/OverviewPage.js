@@ -1,21 +1,13 @@
 import React from "react";
 import "./OverviewPage.css";
-import header from "../../assets/images/header.png";
-import totalBooking from "../../assets/images/totalBooking.png";
-import hanging from "../../assets/images/hanging.png";
-import Confirmed from "../../assets/images/Confirmed.png";
-import rejected from "../../assets/images/rejected.png";
-import fullGraph from "../../assets/images/fullGraph.png";
-import email0 from "../../assets/images/email0.png";
-import Mask0 from "../../assets/images/Mask0.png";
-import notfiacation1 from "../../assets/images/notfiacation1.jpg";
+import { header ,totalBooking ,hanging ,Confirmed ,rejected ,fullGraph ,email0 ,Mask0 ,notfiacation1} from "../../assets";
 
 const OverviewPage = () => {
   return (
-    <div className="Rectangle415">
+    <div className="RectangleOverview">
       <h5 className="overview">نظرة عامة</h5>
 
-      <div className="Group263">
+      <div className="notices">
         <div className="notification">
           <img className="Rectangle2" src={notfiacation1} alt=""></img>
           <img className="header" src={header} alt=""></img>
@@ -23,8 +15,8 @@ const OverviewPage = () => {
         </div>
       </div>
 
-      <div className="Group287">
-        <div className="Rectangle4167">
+      <div className="Cases">
+        <div className="cases">
           <div className="totalBooking">
             <img src={totalBooking} alt=""></img>
             <h3 className="totalNum">55</h3>

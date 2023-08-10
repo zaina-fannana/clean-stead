@@ -1,11 +1,5 @@
 import React from "react";
-import lines1 from "../../../assets/images/lines1.png";
-import lines2 from "../../../assets/images/lines2.png";
-import Maskgroup2 from "../../../assets/images/Maskgroup2.png";
-import reliability1 from "../../../assets/images/reliability.png";
-import online from "../../../assets/images/online.png";
-import discont from "../../../assets/images/discont.png";
-import chat1 from "../../../assets/images/chat1.jpeg";
+import { lines1 ,lines2 ,Maskgroup2 ,reliability1 ,online ,discont , chat1} from "../../../assets";
 
 const whyChooseUsList = [
   {

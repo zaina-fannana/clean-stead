@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import lines2 from "../../assets/images/lines2.png";
 import "./BookNow.css";
-import { DateImage } from "../../assets";
-import num1 from "../../assets/images/num1.png";
-import line8 from "../../assets/images/Line8.png";
-import num2 from "../../assets/images/num2.png";
-import num3 from "../../assets/images/num3.png";
-import line7 from "../../assets/images/Line7.png";
-import line9 from "../../assets/images/Line9.png";
+import {
+  DateImage,
+  lines2,
+  num1,
+  num2,
+  num3,
+  line8,
+  line7,
+  line9,
+} from "../../../assets";
 import axios from "axios";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
@@ -15,6 +17,8 @@ import "./BookNow.css";
 import SelectService from "../SelectService/SelectService";
 import SelectDate from "../SelectDate/SelectDate";
 import EnterInfo from "../EnterInfo/EnterInfo";
+import { redirect } from "react-router-dom";
+import { isCursorAtStart } from "@testing-library/user-event/dist/utils";
 
 const stepsList = [
   {
@@ -22,29 +26,29 @@ const stepsList = [
     component: <SelectService />,
   },
   {
-    id: 1,
+    id: 2,
     component: <SelectDate />,
   },
   {
-    id: 1,
+    id: 3,
     component: <EnterInfo />,
   },
 ];
 
 const servicesHeader = [
   {
-    name: 'اختر الخدمة'
+    name: "اختر الخدمات",
   },
   {
-    name: 'التاريخ والوقت'
+    name: "التاريخ والوقت",
   },
   {
-    name: 'ادخل المعلومات'
+    name: "معلوماتك",
   },
-]
+];
 
 const BookNow = () => {
-  const [currentSlide, setCurrentSlide] = useState("Group230");
+  const [currentSlide, setCurrentSlide] = useState("selectServices");
   const [selectedOption, setSelectedOption] = useState("");
   const [currentStep, setCurrentStep] = useState(0);
   const [expandedSlideIndex, setExpandedSlideIndex] = useState(null);
@@ -72,6 +76,18 @@ const BookNow = () => {
       });
   }, []);
 
+  const handlePrevStep = () => {
+    if (currentStep > 0) {
+      setCurrentStep(currentStep - 1);
+    }
+  };
+
+  const handleNextStep = () => {
+    if (currentStep < stepsList.length - 1) {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
   return (
     <>
       <div className="book-now">
@@ -82,47 +98,64 @@ const BookNow = () => {
         </h2>
       </div>
       <div className="row">
-        {/* change className to stepsContainer */}
-        <div className="Group218">
+        <div className="stepsContainer">
           {/*steps*/}
           <div
             className="steps"
             style={{ display: "flex", alignItems: "center" }}
           >
             {servicesHeader.map((item, index) => {
-              return <div key={index}><div
-                className="Group230"
-                style={{ flex: 1, cursor: "pointer" }}
-                // change function name to toggle or change steps
-                onClick={() => toggleSlide(index)} // pass step name ('selectServices', 'dateAndTime', 'EnterInfos')
-              >
-                <h6 className="text.">
-                  <img className="num1" src={num1} alt="" />
-                  <> </>
-                  {item.name}
-                </h6>
-              </div>
-                {servicesHeader.length !== index + 1 &&
-                  <img
-                    className="line8"
-                    src={line8}
-                    alt=""
-                    style={{ margin: "0 10px" }}
-                  />
-                }
-              </div>
+              return (
+                <div key={index} className="d-flex align-items-baseline mb-2">
+                  <div
+                    className="selectServices"
+                    style={{ flex: 1, cursor: "pointer" }}
+                    onClick={() => toggleSlide(index)}
+                  >
+                    <h6
+                      className="selectServicesText d-flex align-items-center"
+                      style={{
+                        color: index === currentStep ? "#000000" : "#C4C4C4",
+                      }}
+                    >
+                      <div
+                        className="header-service-number"
+                        style={{
+                          backgroundColor:
+                            index === currentStep ? "#00adee" : "#fff",
+                          color: index === currentStep ? "#fff" : "#C4C4C4",
+                          borderRadius:
+                            index === currentStep ? "#00adee" : "##C4C4C4",
+                        }}
+                      >
+                        {index + 1}
+                      </div>
+                      <> </>
+
+                      {item.name}
+                    </h6>
+                  </div>
+                  {servicesHeader.length !== index + 1 && (
+                    <img
+                      className="line8"
+                      src={line8}
+                      alt=""
+                      style={{ margin: "0 10px" }}
+                    />
+                  )}
+                </div>
+              );
             })}
           </div>
           {stepsList.map((step, index) => {
             return currentStep === index ? step.component : null;
           })}
-          <div className="end">
+          <div className="endSection">
             <img className="line7" src={line7} alt=""></img>
             <button
               className="button btn-success"
               style={{ marginRight: 37 }}
-              // add validation to prevent user to minimize the numberof current step if first index reached
-              onClick={() => setCurrentStep(currentStep - 1)}
+              onClick={handlePrevStep}
             >
               الرجوع
             </button>
@@ -135,19 +168,18 @@ const BookNow = () => {
                 color: "#ffffff",
                 marginRight: 450,
               }}
-              // add validation to prevent user to add more numbers to current step if last index reached
-              onClick={() => setCurrentStep(currentStep + 1)}
+              onClick={handleNextStep}
             >
               استمرار{" "}
             </button>
           </div>
         </div>
         {/*ملخص*/}
-        <div className="Rectangle3">
+        <div className="Summary">
           <h5 className="summary">ملخص</h5>
           <img className="line9" src={line9} alt=""></img>
-          <div className="Group225">
-            <div className="Group222">
+          <div className="SummarySection">
+            <div className="ServiceDepartment">
               <h6
                 className="service."
                 style={{
@@ -162,7 +194,7 @@ const BookNow = () => {
               <h6 className="clean">تنظيف المنازل</h6>
             </div>
 
-            <div className="Group223">
+            <div className="selectedItems">
               <h6
                 className="service."
                 style={{
@@ -178,7 +210,7 @@ const BookNow = () => {
                 <li className="clean">تنظيف المنازل (1)</li>
               </ul>
             </div>
-            <div className="Group224">
+            <div className="totalPrice">
               <h6
                 className="service."
                 style={{

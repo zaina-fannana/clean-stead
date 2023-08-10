@@ -6,7 +6,7 @@ import Modal from "react-bootstrap/Modal";
 import axios from "axios";
 import { useAuthContext } from "../../AuthContext/AuthContext";
 import { setAccessToken } from "../../axiosConfig";
-import { registerService } from "../../services"
+import { registerService } from "../../services";
 const Login = ({ isShow, onClose }) => {
   const [isLogin, setIsLogin] = useState();
   const [isClose, setIsClose] = useState();
@@ -305,7 +305,7 @@ const Login = ({ isShow, onClose }) => {
             ) : null}
 
             <div className="password-error-message">
-              {loginAttemptFailed && <span className="required">{ }</span>}
+              {loginAttemptFailed && <span className="required">{}</span>}
             </div>
 
             <button onClick={() => formik.handleSubmit()} className="create">

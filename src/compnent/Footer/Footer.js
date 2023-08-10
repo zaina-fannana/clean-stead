@@ -1,9 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo1 from "../../assets/images/logo1.png";
-import map from "../../assets/images/map.png";
-import phone from "../../assets/images/Phone_duotone.png";
-import message from "../../assets/images/Message_duotone.png";
+import { message ,phone ,map ,logo1} from "../../assets";
 
 const Footer = () => {
   return (
@@ -122,7 +119,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <img src={map} alt="map"></img>
+            <img className="mapImage"src={map} alt="map"></img>
           </div>
         </div>
 

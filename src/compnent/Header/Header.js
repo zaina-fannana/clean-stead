@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
-import logo1 from "../../assets/images/logo1.png";
 import "./Header.css";
 import SignupForm from "../SignupForm/SignupForm";
 import Login from "../Login/Login";
 import { useAuthContext } from "../../AuthContext/AuthContext";
-import BookNow from "../BookNow/BookNow";
+import BookNow from "../../Pages/BookNowPage/BookNow/BookNow";
 import { Link } from "react-router-dom";
-import overview from "../../assets/images/overview.png";
-import Mask from "../../assets/images/Mask.png";
-import MaskEmail from "../../assets/images/MaskEmail.png";
-import MaskCategories from "../../assets/images/MaskCategories.png";
-import MaskServices from "../../assets/images/MaskServices.png";
-import SignIn from "../../assets/images/SignIn.png";
 import OverviewPage from "../OverviewPage/OverviewPage";
 import ReservationsPage from "../ReservationsPage/ReservationsPage";
+import {
+  logo1,
+  overview,
+  Mask,
+  MaskEmail,
+  MaskCategories,
+  MaskServices,
+  SignIn,
+} from "../../assets";
 
 function Header() {
   const [isAuthModalShown, setIsAuthModalShown] = useState(false);
@@ -95,7 +97,6 @@ function Header() {
               </h6>
             </Nav.Link>
           </Nav>
-
           <Nav className="book-now mr-auto">
             {
               <button
@@ -128,7 +129,7 @@ function Header() {
       <Login isShow={isAuthModalShown} onClose={closeAuthModal} />
       {isBookNowVisible && <BookNow />}
       {isSlideVisible && (
-        <div className="Rectangle4153">
+        <div className="dachbord">
           {divs.map((div, index) => (
             <div
               className="sheet"
@@ -149,11 +150,10 @@ function Header() {
               >
                 {div.title}
               </p>
-
               {selectedDivIndex === index && <div className="chip"></div>}
             </div>
           ))}
-          <img src={SignIn} alt="" style={{ marginRight: 22 }}></img>
+          <img className="out" src={SignIn} alt=""></img>
           <button className="logout" onClick={() => toggleSlide(-1)}>
             تسجيل خروج
           </button>

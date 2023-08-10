@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Maskgroup4 from "../../assets/images/Maskgroup4.png";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
-import Vector3 from "../../assets/images/Vector3.png";
-import Vector2 from "../../assets/images/Vector2.png";
 import Form from "react-bootstrap/Form";
 import "./Service.css";
+import { Maskgroup4, Vector2, Vector3 } from "../../../assets";
 
 const Service = ({ item }) => {
   const [open, setOpen] = useState(false);
@@ -86,7 +84,11 @@ const Service = ({ item }) => {
               <Form>
                 {["checkbox"].map((type) => (
                   <div key={`default-${type}`} className="mb-3">
-                    <Form.Check type={type} id={`default-${type}`} />
+                    <Form.Check
+                      type={type}
+                      id={`default-${type}`}
+                      style={{ marginRight: 0 }}
+                    />
                   </div>
                 ))}
               </Form>
@@ -114,10 +116,12 @@ const Service = ({ item }) => {
                     onChange={(e) => setCounter(e.target.value)}
                     className="form-control"
                     style={{
-                      textAlign: "end",
+                      textAlign: "center",
                       width: 35,
                       padding: 0,
                       height: 35,
+                      marginTop: -40,
+                      marginRight: 10,
                     }}
                   />
                   <button
@@ -135,7 +139,7 @@ const Service = ({ item }) => {
                   </button>
                 </>
               </div>
-              <div className="Group78">
+              <div className="RectangleHide.Show">
                 <h6 className="show-hide" style={{}}>
                   رؤية التفاصيل
                 </h6>
@@ -154,7 +158,7 @@ const Service = ({ item }) => {
               <img className="Maskgroup4" src={Maskgroup4} alt="" />
               <h6 className="bedroom">غرفة النوم</h6>
               <h4 className="price">$ 15</h4>
-              <div className="Group78">
+              <div className="RectangleHide.Show">
                 <>
                   <button
                     type="button"
@@ -175,7 +179,7 @@ const Service = ({ item }) => {
                     onChange={(e) => setCounter(e.target.value)}
                     className="form-control"
                     style={{
-                      textAlign: "end",
+                      textAlign: "center",
                       width: 35,
                       padding: 0,
                       height: 35,
@@ -263,10 +267,12 @@ const Service = ({ item }) => {
                     onChange={(e) => setCounter(e.target.value)}
                     className="form-control"
                     style={{
-                      textAlign: "end",
+                      textAlign: "center",
                       width: 35,
                       padding: 0,
                       height: 35,
+                      marginTop: -40,
+                      marginRight: 10,
                     }}
                   />
                   <button
@@ -284,7 +290,7 @@ const Service = ({ item }) => {
                   </button>
                 </>
               </div>
-              <div className="Group78">
+              <div className="RectangleHide.Show">
                 <h6 className="show-hide" style={{}}>
                   رؤية التفاصيل
                 </h6>
