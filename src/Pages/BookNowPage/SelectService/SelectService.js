@@ -8,21 +8,25 @@ const BookNowList = [
     title: "تنظيف المنازل",
     description: "رؤية الخدمات",
     icon: Vector2,
+    contentContainerId: "Rectangle6"
   },
   {
     title: "التنظيف التجاري",
     description: "رؤية الخدمات",
     icon: Vector2,
+    contentContainerId: "Rectangle7"
   },
   {
     title: "تنظيف النوافذ",
     description: "رؤية الخدمات",
     icon: Vector2,
+    contentContainerId: "Rectangle8"
   },
   {
     title: "تنظيف السجاد",
     description: "رؤية الخدمات",
     icon: Vector2,
+    contentContainerId: "Rectangle9"
   },
 ];
 const SelectService = () => {

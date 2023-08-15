@@ -16,8 +16,10 @@ div.stepsContainer {
   box-shadow: 0px 8px 24px rgba(0, 173, 238, 0.1);
   border-radius: 20px;
   width: 800px;
-  height: 660px;
+  height: fit-content;
   margin-top: 20px;
+  padding: 10px;
+
 }
 img.line9 {
   margin-right: -15px;
@@ -25,11 +27,12 @@ img.line9 {
 }
 div.Summary {
   margin-right: 850px;
-  margin-top: -660px;
   width: 300px;
   height: 340px;
   background: #e5f7fd;
   border-radius: 20px;
+  position: absolute;
+  margin-top: 41px;
 }
 div.steps {
   width: 703.98px;

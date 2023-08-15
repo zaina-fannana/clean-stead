@@ -10,3 +10,4 @@ export { default as EnterInfo } from "./BookNowPage/EnterInfo/EnterInfo";
 export { default as SelectDate } from "./BookNowPage/SelectDate/SelectDate";
 export { default as SelectService } from "./BookNowPage/SelectService/SelectService";
 export { default as Service } from "./BookNowPage/Service/Service";
+export { default as ContactUs } from "./HomePage/ContactUs/ContactUs";

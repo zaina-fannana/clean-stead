@@ -91,7 +91,7 @@ function Header() {
                 من نحن
               </h6>
             </Nav.Link>
-            <Nav.Link className="call-us" href="/home">
+            <Nav.Link className="call-us" href="/ContactUs">
               <h6 style={{ color: "#1D1D35", fontWeight: 200, fontSize: 20 }}>
                 اتصل بنا
               </h6>

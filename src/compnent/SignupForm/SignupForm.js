@@ -55,7 +55,7 @@ const SignupForm = ({ isShow, onClose }) => {
     <Modal show={isShow} onHide={onClose}>
       <Modal.Body className="modal-body">
         <>
-          <i class="fa-solid fa-x" style={{ color: "#ccd2e3" }}></i>
+          <i className="fa-solid fa-x" style={{ color: "#ccd2e3" }}></i>
           <p className="start">من فضلك قم بتسجيل الدخول للاستمرار</p>
         </>
 

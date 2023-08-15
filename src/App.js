@@ -8,8 +8,8 @@ import Services from "./Pages/HomePage/Services/Services";
 import WhyChoosUs from "./Pages/HomePage/WhyChoosUs/WhyChoosUs";
 import Reviews from "./Pages/HomePage/Reviews/Reviews";
 import { useAuthContext } from "./AuthContext/AuthContext";
-import { HomePage, AboutUsPage, SliderPage } from "./Pages"
-
+import { HomePage, AboutUsPage, SliderPage } from "./Pages";
+import ContactUs from "./Pages/HomePage/ContactUs/ContactUs";
 import useProducts from "./hooks/useProducts/useProducts";
 
 function App() {
@@ -24,15 +24,22 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <PageContainer>
-        <Routes>
-          <Route exact path="/products" element={<SliderPage products={products} />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/AboutUsPage" element={<AboutUsPage />} />
-        </Routes>
-      </PageContainer>
-    </Router>
+    <>
+      <Router>
+        <PageContainer>
+          <Routes>
+            <Route
+              exact
+              path="/products"
+              element={<SliderPage products={products} />}
+            />
+            <Route path="/Services" element={<Services />} />
+            <Route path="/AboutUsPage" element={<AboutUsPage />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
+          </Routes>
+        </PageContainer>
+      </Router>
+    </>
   );
 }
 

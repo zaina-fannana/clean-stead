@@ -18,14 +18,16 @@ const SelectDate = () => {
     <div className="DateAndTimeslide">
       <div className="ChooseDate">
         <div className="choose0">
-          <img className="line7" src={line7} alt="" style={{
+          <img
+            className="line7"
+            src={line7}
+            alt=""
+            style={{
               marginTop: 15,
-            }}/>
+            }}
+          />
           <h5 className="chooseTheDate">اختر موعد الحجز</h5>
-          <div
-            className="loop"
-            style={{ margin: "20px 0" }}
-          >
+          <div className="loop" style={{ margin: "20px 0" }}>
             <div className="loop" style={{ display: "flex", gap: "10px" }}>
               <h4 className="loop.">تكرار الخدمة</h4>
 

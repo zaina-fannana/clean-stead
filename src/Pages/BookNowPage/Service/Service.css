@@ -1,12 +1,11 @@
 div.Rectangle6 {
   box-sizing: border-box;
   background: #ffffff;
-  border: 2px solid #00adee;
+  border: 2px solid #f2f2f2;
   border-radius: 16px;
-  height: 100px;
+  margin-inline: auto;
+  margin-top: 10px;
   width: 674px;
-  margin-right: 13px;
-  margin-top: 30px;
 }
 div#example-collapse-text {
   box-sizing: border-box;
@@ -21,10 +20,9 @@ div.Rectangle8 {
   background: #ffffff;
   border: 2px solid #f2f2f2;
   border-radius: 16px;
-  height: 100px;
   width: 674px;
-  margin-right: 13px;
-  margin-top: 30px;
+  margin-block: 5px;
+  margin-inline: auto;
 }
 .RectangleHide\.Show {
   width: 0px;
@@ -97,14 +95,13 @@ img.vactor9 {
   margin-top: -85px;
 }
 div.Rectangle7 {
-  height: 250px;
   box-sizing: border-box;
   background: #ffffff;
   border: 2px solid #f2f2f3;
   border-radius: 16px;
   width: 674px;
-  margin-right: 13px;
-  margin-top: 30px;
+  margin-inline: auto;
+  margin-top: 10px;
 }
 input.form-control1 {
   width: 35px;
@@ -127,7 +124,7 @@ img.vector2 {
 p.elements {
   width: 275px;
   margin-right: 90px;
-  margin-top: 26px;
+  margin-top: 4px;
 }
 .element {
   width: 190px;

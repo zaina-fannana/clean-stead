@@ -4,6 +4,7 @@ import EnterInfo from "./EnterInfo/EnterInfo";
 import SelectDate from "./SelectDate/SelectDate";
 import SelectService from "./SelectService/SelectService";
 import Service from "./Service/Service";
+import { AuthProvider } from "./AuthContextService/AuthContextService";
 
 const BookNowPage = () => {
   return (
@@ -12,7 +13,9 @@ const BookNowPage = () => {
       <EnterInfo />
       <SelectDate />
       <SelectService />
-      <Service />
+      <AuthProvider>
+        <Service />
+      </AuthProvider>
     </>
   );
 };

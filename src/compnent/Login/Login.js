@@ -100,7 +100,7 @@ const Login = ({ isShow, onClose }) => {
       <Modal.Body className={`modal-body ${isClose ? "drunk-effect" : ""}`}>
         <button
           type="button"
-          class="btn-close"
+          className="btn-close"
           aria-label="Close"
           onClick={handleButtonClick}
         ></button>

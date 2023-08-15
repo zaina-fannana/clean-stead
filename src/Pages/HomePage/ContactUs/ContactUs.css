@@ -1,0 +1,116 @@
+h3.ConnectUsTitle {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 62px;
+  text-align: start;
+  color: #000000;
+}
+form.ConnectUsData {
+  width: min-content;
+}
+select#exampleFormControlSelect1 {
+  margin-right: 76px;
+  margin-top: 20px;
+  /* width: 185px; */
+  box-sizing: border-box;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  height: 50px;
+}
+label.TheService {
+  /* الخدمة */
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #1d1d35;
+  margin-right: 80px;
+}
+select#service {
+  box-sizing: border-box;
+  width: 375.4px;
+  height: 50px;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+}
+.NameAndPhone {
+  margin-right: 83px;
+  margin-top: 25px;
+}
+label.Name1 {
+  /* الاسم */
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #1d1d35;
+}
+label.phone1 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #1d1d35;
+  margin-right: 60px;
+}
+input#name1 {
+  box-sizing: border-box;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  width: 220px;
+  height: 50px;
+  border-radius: 12px;
+  margin-right: -5px;
+}
+.form-row {
+  margin-right: 73px;
+  margin-top: 30px;
+}
+input#phone1 {
+  box-sizing: border-box;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  width: 220px;
+  height: 50px;
+  border-radius: 12px;
+  margin-right: 60px;
+}
+textarea#message {
+  box-sizing: border-box;
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+}
+button.SendMessage {
+  box-sizing: border-box;
+  background: #00adee;
+  border: 2px solid #ffffff;
+  border-radius: 150px;
+  color: #ffffff;
+  width: 100px;
+  height: 45px;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+.Group-Message {
+  margin-right: 80px;
+  margin-top: -25px;
+}
+label.message {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #1d1d35;
+}
+textarea#writeMessage {
+  box-sizing: border-box;
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+img.MaskImage {
+  width: 380px;
+  margin-top: -445px;
+  margin-left: -220px;
+}
