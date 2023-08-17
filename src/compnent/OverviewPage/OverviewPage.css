@@ -5,6 +5,9 @@ div.RectangleOverview {
   height: 750px;
   background-color: ghostwhite;
 }
+.ReservationStatuses {
+  margin-top: -33px;
+}
 h5.overview {
   /* نظرة عامة */
   font-weight: 800;

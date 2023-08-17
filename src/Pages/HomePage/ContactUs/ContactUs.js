@@ -19,10 +19,10 @@ const validationSchema = Yup.object({
 
   name: Yup.string()
     .required("هذا الحقل مطلوب!")
-    .test("wordCount", "يجب أن يتكون الاسم على الأقل من 3 كلمات", (value) => {
+    .test("wordCount", "يجب أن يتكون الاسم على الأقل من كلمة واحدة ", (value) => {
       if (value) {
         const words = value.split(" ").filter((word) => word !== "");
-        return words.length >= 3;
+        return words.length >= 1;
       }
       return false;
     }),
@@ -92,8 +92,13 @@ export const ContactUs = () => {
                     name="name1"
                     placeholder="الاسم"
                     className="NamePerson"
+                    {...formik.getFieldProps("name")}
                   />
+                  {formik.touched.name && formik.errors.name ? (
+                    <div className="error">{formik.errors.name}</div>
+                  ) : null}
                 </div>
+
                 <div class="form-group col-md-6">
                   <label className="phone1">رقم الجوال</label>
                   <input
@@ -102,7 +107,11 @@ export const ContactUs = () => {
                     name="phone1"
                     placeholder="رقم الجوال"
                     className="PhonePerson"
+                    {...formik.getFieldProps("phone")}
                   />
+                  {formik.touched.phone && formik.errors.phone ? (
+                    <div className="error1">{formik.errors.phone}</div>
+                  ) : null}
                 </div>
               </div>
 
@@ -121,7 +130,11 @@ export const ContactUs = () => {
               id="writeMessage"
               rows="3"
               placeholder="اكتب الرسالة هنا"
+              {...formik.getFieldProps("message")}
             ></textarea>
+            {formik.touched.message && formik.errors.message ? (
+              <div className="error">{formik.errors.message}</div>
+            ) : null}
           </div>
         </form>
       </form>

@@ -11,9 +11,10 @@ import { useAuthContext } from "./AuthContext/AuthContext";
 import { HomePage, AboutUsPage, SliderPage } from "./Pages";
 import ContactUs from "./Pages/HomePage/ContactUs/ContactUs";
 import useProducts from "./hooks/useProducts/useProducts";
+import AdminLogin from "./Pages/AdminLogin/AdminLogin";
 
 function App() {
-  const { isAuthnticated } = useAuthContext();
+  const { isAuthenticated } = useAuthContext();
   const { products } = useProducts();
 
   useEffect(() => {
@@ -26,18 +27,20 @@ function App() {
   return (
     <>
       <Router>
-        <PageContainer>
-          <Routes>
-            <Route
-              exact
-              path="/products"
-              element={<SliderPage products={products} />}
-            />
-            <Route path="/Services" element={<Services />} />
-            <Route path="/AboutUsPage" element={<AboutUsPage />} />
-            <Route path="/ContactUs" element={<ContactUs />} />
-          </Routes>
-        </PageContainer>
+          <PageContainer>
+            <Routes>
+              <>
+                <Route
+                  exact
+                  path="/products"
+                  element={<SliderPage products={products} />}
+                />
+                <Route path="/Services" element={<Services />} />
+                <Route path="/AboutUsPage" element={<AboutUsPage />} />
+                <Route path="/ContactUs" element={<ContactUs />} />
+              </>
+            </Routes>
+          </PageContainer>
       </Router>
     </>
   );
